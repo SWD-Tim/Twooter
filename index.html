@@ -8,16 +8,35 @@
 </head>
     <body>
         <main>
-            <section id="border">
-                <section>
-                    <h1 id="displayname"></h1>
-                    <h2 id="username"></h2>
-                    <h2 id="timeAgo"></h2>
-                </section>
-                <section>
-                    <img id="img">
-                </section>
+            <section id="tweets">
+                <article class="tweet">
+                    <h2 class="heading">
+                        <span class="displayName"></span>
+                        <span class="username"></span>
+                        <span class="timeAgo"></span>
+                    </h2>
+                    <p id="content"></p>
+                    <img class="image" src="">
+                </article>
             </section>
+
+
+
+            <template id="tweetTemplate">
+                <section id="tweets">
+                    <article class="tweet">
+                        <h2 class="heading">
+                            <span class="displayName"></span>
+                            <span class="username"></span>
+                            <span class="timeAgo"></span>
+                        </h2>
+                        <p id="content"></p>
+                        <img class="image" src="">
+                    </article>
+                </section>
+            </template>
+
+
         </main>
     </body>
 </html>
