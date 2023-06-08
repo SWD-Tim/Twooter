@@ -1,9 +1,9 @@
-const testTweet = {
+const tweet = {
     displayName: 'Tim',
     userName: 'timp',
     timeAgo: '28d',
-    content: 'lorem',
-    image: ''
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit explicabo saepe pariatur similique, dignissimos quam, obcaecati, quis placeat at iusto vel! Iure est neque eaque magni dignissimos porro accusantium. Harum. ',
+    image: 'https://i.imgur.com/YKI1zyC.jpeg'
 };
 
 function showTweet(tweet){
@@ -20,4 +20,16 @@ function showTweet(tweet){
     tweetSection.appendChild(tweetArticle);
 }
 
-showTweet();
+showTweet(tweet);
+
+function getTweets(){
+    fetch("twooter.json")
+    .then((response) => response.json())
+    .then(showTweet)
+}
+
+function showTweets(){
+    
+}
+
+getTweets();

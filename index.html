@@ -4,40 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" defer></script>
     <title>Twooter</title>
+    <script src="main.js" defer></script>
 </head>
-    <body>
-        <main>
-            <section id="tweets">
+<body>
+    <main>
+
+        <section id="tweets">
+        </section>
+        
+            <template id="tweetTemplate">
                 <article class="tweet">
-                    <h2 class="heading">
+                    <h2 class="head">
                         <span class="displayName"></span>
-                        <span class="username"></span>
+                        <span class="userName"></span>
                         <span class="timeAgo"></span>
                     </h2>
-                    <p id="content"></p>
-                    <img class="image" src="">
+                    <p class="content"></p>
+                    <img class="image" src="" alt="">
                 </article>
-            </section>
-
-
-
-            <template id="tweetTemplate">
-                <section id="tweets">
-                    <article class="tweet">
-                        <h2 class="heading">
-                            <span class="displayName"></span>
-                            <span class="userName"></span>
-                            <span class="timeAgo"></span>
-                        </h2>
-                        <p id="content"></p>
-                        <img class="image" src="">
-                    </article>
-                </section>
             </template>
 
 
-        </main>
-    </body>
+    </main>
+</body>
 </html>
